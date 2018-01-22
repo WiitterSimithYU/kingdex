@@ -1,0 +1,19 @@
+<view class="container" style="background: {{ bg }};">
+  <view class="card">
+    <view class="card-header">
+      <image class="equip-img" src="http:{{ equip.img }}"></image>
+      <view class="card-title">
+        <view class="equip-name">{{ equip.item_name }}</view>
+        <view class="equip-type" style="background: {{ type[currentType].color }}">{{ type[currentType].name }}</view>
+      </view>
+    </view>
+    <view class="card-content">
+      <view class="equip-des">
+        <text wx:for="{{ equip.des1 }}">{{ item }}</text>
+      </view>
+      <view class="equip-des" wx:if="{{ equip.des2 }}">
+        <text wx:for="{{ equip.des2 }}">{{ item }}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,67 @@
+<view class="container">
+  <view class="section g-wrap">
+    <view class="section-title">英雄分类</view>
+    <view class="grid-wrp">
+      <view class="grid-row">
+        <view class="grid-item">
+          <navigator url="../herolist/herolist?role=3"></navigator>
+          <text>坦克</text>
+          <image src="../../img/role/tank.png"></image>
+        </view>
+        <view class="grid-item">
+          <navigator url="../herolist/herolist?role=1"></navigator>
+          <text>战士</text>
+          <image src="../../img/role/warrior.png"></image>
+        </view>
+        <view class="grid-item">
+          <navigator url="../herolist/herolist?role=4"></navigator>
+          <text>刺客</text>
+          <image src="../../img/role/assassin.png"></image>
+        </view>
+      </view>
+      <view class="grid-row">
+        <view class="grid-item">
+          <navigator url="../herolist/herolist?role=2"></navigator>
+          <text>法师</text>
+          <image src="../../img/role/mage.png"></image>
+        </view>
+        <view class="grid-item">
+          <navigator url="../herolist/herolist?role=5"></navigator>
+          <text>射手</text>
+          <image src="../../img/role/archer.png"></image>
+        </view>
+        <view class="grid-item">
+          <navigator url="../herolist/herolist?role=6"></navigator>
+          <text>辅助</text>
+          <image src="../../img/role/support.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section slider-container">
+    <view class="section-title">周免英雄</view>
+    <scroll-view class="g-slider hero-slider" scroll-x="true">
+      <view class="g-slider-item" wx:for="{{ freehero }}">
+        <navigator url="../hero_detail/hero_detail?id={{ item.id }}"></navigator>
+        <view class="avatar">
+          <image src="http:{{ item.img }}"></image>
+        </view>
+        <text>{{ item.name }}</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="section g-wrap">
+    <view class="section-title">新手攻略</view>
+    <view class="article-list">
+      <view class="article-list-item">
+        <navigator url="../terminology/terminology"></navigator>
+        <text>电竞专业术语宝典</text>
+        <image src="../../img/article/jargon.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="about">
+    <view class="about-des">建议&合作</view>
+    <view class="about-des">kyleochn@foxmail.com</view>
+  </view>
+</view>

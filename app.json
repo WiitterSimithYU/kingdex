@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/herolist/herolist",
+    "pages/hero_detail/hero_detail",
+    "pages/equip/equip",
+    "pages/equip_detail/equip_detail",
+    "pages/ming/ming",
+    "pages/ming_detail/ming_detail",
+    "pages/terminology/terminology",
+    "pages/term_detail/term_detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "王者图鉴",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#A4A4A4",
+    "selectedColor": "#D4A93D",
+    "backgroundColor": "#fff",
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "英雄"
+      },
+      {
+        "pagePath": "pages/equip/equip",
+        "text": "装备"
+      },
+      {
+        "pagePath": "pages/ming/ming",
+        "text": "铭文"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+<view class="container"> 
+  <scroll-view class="category-list" scroll-x="true">
+    <view class="c-item" wx:for="{{ type }}" catchtap="toggle" data-type="{{ index }}">
+      <text>{{ item }}</text>
+    </view>
+  </scroll-view>
+  <view class="g-wrap grid-content">
+    <view class="grid" wx:for="{{ equip }}">
+      <navigator url="../equip_detail/equip_detail?id={{ item.item_id }}"></navigator>
+      <image class="grid-item-img" src="http:{{ item.img }}"></image>  
+      <view class="grid-item-name">{{ item.item_name }}</view>
+    </view>
+  </view>
+</view> 
